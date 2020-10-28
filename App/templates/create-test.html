@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-Create{% endblock %}
+{% block content %}
+    <div id="create-test-container">
+        {% with messages = get_flashed_messages() %}
+            {%if messages%}
+                {%for msg in messages%}
+                    <p id='flash-err'>{{msg}}</p>
+                {%endfor%}
+            {%endif%}
+        {% endwith %}
+        <div id="create-section">
+            <form action="" method="post" id="create-test-form">
+                <label class='create-test-form-ele' for="create-test-form">Create Test</label>
+                <input class='create-test-form-ele' name='test_name' maxlength="10" type="text" placeholder="Enter test name" id='create-test-name-input'>
+                <input class='create-test-form-ele' type="submit" value="Create" id="create-test-form-btn">
+            </form>
+        </div>
+    </div>
+{%endblock%}

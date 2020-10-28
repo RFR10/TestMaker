@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-Make{% endblock %}
+{%block content%}
+<div id="testquiz-container">
+    <div id="testquiz-firstq-container">
+        <p class="testquiz-q-title">Whats your age range</p>
+        <div class="testquiz-answer-card" onclick="EnterAgeRange(1)" id="testquiz-answer-card-agerange1"><p>9-10</p></div>
+        <div class="testquiz-answer-card" onclick="EnterAgeRange(2)" id="testquiz-answer-card-agerange2"><p>4-6</p></div>
+    </div>
+    <div id="testquiz-secondq-container">
+        <p class="testquiz-q-title">Whats the your profession</p>
+        <div class="testquiz-answer-card" onclick="EnterProfession(1)" id="tetsquiz-answer-card-profession1"><p>math</p></div>
+    </div>
+</div>
+<form action="" id="testquiz-form" method="POST">
+    <input name='age-range' type="text" id="testquiz-agerange-input">
+    <input name='profession' type="text" id="testquiz-profession-input">
+    <input type="submit" value="Ok" id="testquiz-submit-btn">
+</form>
+<script>
+    document.getElementById('testquiz-secondq-container').style.display = 'none'
+    function EnterAgeRange(id){
+        agerange = document.getElementById('testquiz-answer-card-agerange'+String(id)).textContent
+        document.getElementById('testquiz-agerange-input').value = agerange
+        console.log('Enter age-range: ' + document.getElementById('testquiz-agerange-input').value)
+        document.getElementById('testquiz-firstq-container').style.display = 'none'
+        document.getElementById('testquiz-secondq-container').style.display = 'block'
+    }
+    function EnterProfession(id){
+        profession = document.getElementById('tetsquiz-answer-card-profession'+String(id)).textContent
+        document.getElementById('testquiz-profession-input').value = profession
+        console.log('Enter profession: ' + document.getElementById('testquiz-profession-input').value)
+        document.getElementById('testquiz-submit-btn').click()
+    }
+</script>
+{%endblock%}

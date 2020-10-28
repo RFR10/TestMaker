@@ -1,0 +1,59 @@
+{
+    "questions": [
+        "23 * 6 = ",
+        "43 * 4 = ",
+        "64 * 3 = ",
+        "42 : 4 = ",
+        "How to multiply fraction by fraction, Choose the right answer.",
+        "234,567 + 200,567 = ",
+        "Select the prime number.",
+        "14 * 10 = 0.14 * X",
+        "350 : X = 35 : 100",
+        "3.03 + 12.1 = ",
+        "1.75 - 0.5 = ",
+        "3575 + 2425 = ",
+        "180 : 6 * 5 - 3",
+        "0.009 * 100 = ",
+        "15.47 * 10 = "
+    ],
+    "answers": [
+        "138",
+        "172",
+        "192",
+        "10.5",
+        "Counter multiply by counter and denominator multiply by denominator.",
+        "535134",
+        "13",
+        "1000",
+        "1000",
+        "15.13",
+        "1.25",
+        "6000",
+        "147",
+        "0.9",
+        "154.7"
+    ],
+    "selects_options": {
+        "0": ["Counter multiply by counter and denominator multiply by denominator.", "Counter multiply by counter and denominator multiply by counter.", "Counte devided by counter and denominator devided by denominator."],
+        "1": ["14", "13","10", "64"],
+        "2": ["10", "1000", "200", "100.10"],
+        "3": ["3.5", "10", "1000", "100.35", "1"]
+    },
+    "TYPE": [
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "SELECT",
+        "EXERCISE",
+        "SELECT",
+        "SELECT",
+        "SELECT",
+        "EXCERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE"       
+    ]
+}

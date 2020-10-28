@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-Log In{% endblock %}
+{% block content %}
+<div id="login-container">
+    <div id="login-section">
+        <form action="" method="post" id="login-form">
+            <label for="login-form" id="label">Log In</label>
+            <input maxlength="100" name='username' class='form-input' type="text" id="username" placeholder="Enter username">
+            <input maxlength="100" name='password' class="form-input" type="password" id="password" placeholder="Enter password">
+            <input type="submit" value="Log In" id="login-submit-btn">
+        </form>
+        <a href="/signup">Dont have an account?, Sign Up!</a>
+        {% with messages = get_flashed_messages() %}
+            {%if messages%}
+                {%for msg in messages%}
+                    <p id='flash-err'>{{msg}}</p>
+                {%endfor%}
+            {%endif%}
+        {% endwith %}
+    </div>
+    <div id="login-side-section">
+        <img src="{{url_for('static', filename='images/login-side-img.jpg')}}" width="100%" id="login-side-image" height="100%" alt="Side Img">
+    </div>
+</div>
+
+{%endblock%}

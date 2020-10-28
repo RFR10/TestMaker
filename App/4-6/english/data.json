@@ -1,0 +1,26 @@
+{
+    "questions": [
+        "The book is _____ the table",
+        "The chair is ____ the table",
+        "The book is ____ the box",
+        "The box is _____ the table",
+        "The pen is ___ the pencilcase",
+    ],
+    "answers": [
+        "on",
+        "near",
+        "in",
+        "on",
+        "in"
+    ],
+    "selects_options": {
+
+    },
+    "TYPE": [
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+    ]
+}

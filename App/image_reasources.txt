@@ -1,0 +1,13 @@
+home big photo
+https://stocksnap.io/photo/pencil-write-D2H7OS598P
+
+home big photo 2
+<span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/test?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+https://unsplash.com/photos/4JxV3Gs42Ks
+
+type code
+https://css-tricks.com/snippets/css/typewriter-effect/
+
+login side image:
+https://unsplash.com/photos/PJzc7LOt2Ig
+<span>Photo by <a href="https://unsplash.com/@hope_house_press_leather_diary_studio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hope House Press - Leather Diary Studio</a> on <a href="https://unsplash.com/s/photos/write?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

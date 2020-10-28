@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='home_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='login_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='signup_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='dashboard_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='create-test_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='test-quiz_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='view-test_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='export-test_style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='style.css')}}">
+
+
+</head>
+<body>
+    <div id="high-bar">
+        <a href="" id="high-bar-logo">
+            <img src="/static/images/logo.png" alt="Logo" width="55px" height="64px" style="margin-top:15px; margin-left:15px">
+        </a>
+        <div id="high-bar-nav"> 
+            <a href='/' class='high-bar-link'>Home</a>
+            <a href='/about' class='high-bar-link'>About</a>
+            <a href='/dashboard' class='high-bar-link'>Dashboard</a>
+        </div>
+        <div id="high-bar-account-section">
+            <button id='login-btn' class="account-btn"><a href="/login" class="account-btn-link">Log In</a></button>
+        </div>
+    </div>    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

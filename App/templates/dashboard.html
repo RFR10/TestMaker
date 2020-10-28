@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-Dashboard{% endblock %}
+{% block content %}
+<div id="dashboard-container">
+    {% with messages = get_flashed_messages() %}
+        {%if messages%}
+            {%for msg in messages%}
+                <p id='flash-err'>{{msg}}</p>
+            {%endfor%}
+        {%endif%}
+    {% endwith %}
+    <div id="small-left-bar">
+        <a id='profile-btn' href="">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id='dashboard-small-profile-btn'>
+            <circle cx="20" cy="20" r="20" fill="#949494"/>
+            <circle cx="20.2798" cy="13.9428" r="3.94276" fill="#F8F8F8"/>
+            <path d="M28.5596 26.1653C28.5596 30.7381 24.8526 29.3195 20.2798 29.3195C15.707 29.3195 12 30.7381 12 26.1653C12 21.5925 15.707 17.8855 20.2798 17.8855C24.8526 17.8855 28.5596 21.5925 28.5596 26.1653Z" fill="#C4C4C4"/>
+            <circle cx="20" cy="20" r="20" fill="#949494"/>
+            <circle cx="20.2798" cy="13.9428" r="3.94276" fill="#F8F8F8"/>
+            <path d="M28.5596 26.1653C28.5596 30.7381 24.8526 29.3195 20.2798 29.3195C15.707 29.3195 12 30.7381 12 26.1653C12 21.5925 15.707 17.8855 20.2798 17.8855C24.8526 17.8855 28.5596 21.5925 28.5596 26.1653Z" fill="#C4C4C4"/>
+            <circle cx="20" cy="20" r="20" fill="#949494"/>
+            <circle cx="20.2798" cy="13.9428" r="3.94276" fill="#F8F8F8"/>
+            <path d="M28.5596 26.1653C28.5596 30.7381 24.8526 29.3195 20.2798 29.3195C15.707 29.3195 12 30.7381 12 26.1653C12 21.5925 15.707 17.8855 20.2798 17.8855C24.8526 17.8855 28.5596 21.5925 28.5596 26.1653Z" fill="#C4C4C4"/>
+            </svg>
+        </a>
+        <div id="profile-dropdown-items">
+            <a href="/logout" class="profile-dropdown-item">Log Out</a>
+        </div>
+    </div>
+    <a href="/create-test" id="dashboard-create-test-btn">Create</a>
+    <div id="dashboard-tests-section">
+        {%if not have_tests%}
+            <div id="no-tests-noti">
+                <p id="no-tests-title">Oh! It seems like you dont create ay test!</p>
+                <a href="/create-test" id="no-tests-btn">Create Test</a>
+            </div>
+        {%endif%}
+        {%if have_tests%}
+            {%for test in tests%}
+                <div class="test-info-card">
+                    <p>{{test.TEST_NAME}}</p>
+                    <a class='dashboard-test-info-link' href="/select-test/{{test.USERID}}/{{test.USERPASS}}/{{test.TEST_NAME}}/{{url_for('ViewTest')}}">View</a>
+                    <!-- <a class='dashboard-test-info-link' href="">Answer</a> -->
+                </div>
+            {%endfor%}
+        {%endif%}
+    </div>
+</div>
+{% endblock %}

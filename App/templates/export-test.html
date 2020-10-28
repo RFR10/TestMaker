@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-Export{% endblock %}
+{% block content %}
+<div id="export-test-container">
+    {% with messages = get_flashed_messages() %}
+        {%if messages%}
+            {%for msg in messages%}
+                <p id='flash-err'>{{msg}}</p>
+            {%endfor%}
+        {%endif%}
+    {% endwith %}
+    <div class="export-test-info-alert">Enter the path you want to save the test (demo: C:\Users\you\your\path\math_test1.txt/.doc/.pdf)</div>
+    <form action="" method="post" id="export-test-form">
+        <label class='export-test-form-ele' for="export-test-form"><!--<span class="export-test-info-span">?</span>-->Export</label>
+        <div id="export-test-input-container">
+            <input class='export-test-form-ele export-test-form-input' type="text" name="export_path" id="export-test-input" placeholder="Enter path">
+            <input class='export-test-form-ele export-test-form-input' type="submit" value="Ok" id="export-test-submit-btn">
+        </div>
+    </form>
+</div>
+{%endblock%}

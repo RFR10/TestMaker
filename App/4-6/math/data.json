@@ -1,0 +1,56 @@
+{
+    "questions": [
+        "5 + 5 = ",
+        "10 * 10 = ",
+        "20 * 3 = ",
+        "12 - 4",
+        "14 + 15 = ",
+        "Select the biggest number.",
+        "132 + 9 = ",
+        "5 * 5 = ",
+        "6 - 6 = ",
+        "4 + 27",
+        "8 * 3 = ",
+        "4 * 2 = ",
+        "3 * 2 = ",
+        "4 + 4 = ",
+        "1 * 1 = "
+    ],
+    "answers": [
+        "10",
+        "100",
+        "60",
+        "8",
+        "29",
+        "16",
+        "141",
+        "25",
+        "0",
+        "31",
+        "24",
+        "8",
+        "6",
+        "8",
+        "1"
+    ],
+    "selects_options": {
+        "0": [1, 16, 5, 0.98]
+    },
+    "TYPE": [
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "SELECT",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE",
+        "EXERCISE"
+    ]
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}TestMaker-View{% endblock %}
+{% block content %}
+<div id="viewtest-container">
+    <div id="viewtest-test_cont">
+        {%for r in test_cont%}
+        <p class="viewtest-test-row">{{r}}</p>
+        {%endfor%}
+    </div>
+    <div id="viewtest-export-container">
+        <p id="viewtest-export-title">Export</p>
+        <a class='viewtest-export-link' id="viewtest-export-link-pdf" href="/export/pdf">.pdf</a>
+        <a class='viewtest-export-link' id="viewtest-export-link-txt" href="/export/basic">.txt</a>
+        <a class='viewtest-export-link' id="viewtest-export-link-doc" href="/export/basic">.doc</a>
+    </div>
+</div>
+{%endblock%}
