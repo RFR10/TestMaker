@@ -2,7 +2,7 @@
 
 > **When you running the app enable "Disable cache" in your browser devtools**
 
-I am 10 years old
+**I am 10 years old**
 
 This app made for the second tech with tim code jam (in the time of the code jam).
 The website enables students train for their own exams with the relevant content, with focus on ease-of-use and flexibility.
