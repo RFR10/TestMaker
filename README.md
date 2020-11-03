@@ -24,7 +24,7 @@ cd App
 python app.py
 
 ```
-**in your search browser type to http://127.0.0.1:5000/**
+**in your search browser go to http://127.0.0.1:5000/**
 
 
 # Images
